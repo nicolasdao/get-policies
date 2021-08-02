@@ -1,0 +1,48 @@
+{
+  "name": "get-policies",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": "index.js",
+  "description": "NPX script that lists/searches the AWS managed policies and copy the selected one to the clipboard.",
+  "keywords": [
+    "policy",
+    "policies",
+    "managed",
+    "managed-policies",
+    "aws-cli",
+    "aws",
+    "cli",
+    "iam"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicolasdao/get-policies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicolasdao/get-policies/issues"
+  },
+  "homepage": "https://github.com/nicolasdao/get-policies#readme",
+  "scripts": {
+    "lint": "eslint index.js src/ test/ --fix",
+    "push": "git push --follow-tags origin master && npm publish --access=public",
+    "rls": "standard-version --release-as",
+    "start": "TZ=UTC NODE_ENV=production node index.js",
+    "test": "mocha --exit",
+    "v": "node -e \"console.log(require('./package.json').version)\""
+  },
+  "author": "Nicolas Dao",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^6.8.0",
+    "mocha": "^8.2.1",
+    "standard-version": "^9.3.0"
+  },
+  "dependencies": {
+    "clipboardy": "^2.3.0",
+    "colors": "^1.4.0",
+    "commander": "^8.0.0",
+    "inquirer": "^8.1.2",
+    "inquirer-autocomplete-prompt": "^1.4.0"
+  }
+}

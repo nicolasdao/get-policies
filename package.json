@@ -1,6 +1,6 @@
 {
   "name": "get-policies",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "bin": "index.js",
   "description": "NPX script that lists/searches the AWS managed policies and copy the selected one to the clipboard.",

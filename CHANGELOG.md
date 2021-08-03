@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/nicolasdao/get-policies/compare/v1.0.0...v1.1.0) (2021-08-03)
+
+
+### Features
+
+* Add support for advanced search ([1080247](https://github.com/nicolasdao/get-policies/commit/1080247cebfe2739752c2f18383b53af45211d29))
+
 ## 1.0.0 (2021-08-02)
 
 

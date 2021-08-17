@@ -1,6 +1,6 @@
 const https = require('https')
 
-const GIST = 'https://gist.githubusercontent.com/nicolasdao/ce55f5936113fc5a3b1badb8d4adee9d/raw'
+const DB = 'https://raw.githubusercontent.com/nicolasdao/get-raw-policies/master/managed-policies.json'
 
 /**
  * Gets all the actions from a policiy document.
@@ -173,7 +173,7 @@ const httpGet = url => new Promise((next, fail) => https.get(url, res => {
 	fail(err)
 }))
 
-const awsManagedPolicies = httpGet(`${GIST}/all_aws_managed_policies.json`)
+const awsManagedPolicies = httpGet(DB)
 
 module.exports = {
 	aws: {
